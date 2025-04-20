@@ -22,6 +22,12 @@ public class GlobalExceptionMapper implements ExceptionMapper<RuntimeException> 
         } else if (ex instanceof AuthorNotFoundException){
             errorMsg = "Author Not Found";
             status = 404;
+        } else if (ex instanceof CartNotFoundException) {
+            errorMsg = "Cart Not Found";
+            status = 404;
+        } else if (ex instanceof CartItemNotFoundException) {
+            errorMsg = "Cart Item Not Found";
+            status = 404;
         }
 
         error.put("error", errorMsg);
