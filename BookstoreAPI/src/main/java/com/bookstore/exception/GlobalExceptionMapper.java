@@ -19,6 +19,9 @@ public class GlobalExceptionMapper implements ExceptionMapper<RuntimeException> 
         if (ex instanceof BookNotFoundException) {
             errorMsg = "Book Not Found";
             status = 404;
+        } else if (ex instanceof AuthorNotFoundException){
+            errorMsg = "Author Not Found";
+            status = 404;
         }
 
         error.put("error", errorMsg);
