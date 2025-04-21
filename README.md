@@ -26,9 +26,9 @@ BookstoreAPI/
 │       └── java/
 │           └── com/
 │               └── bookstore/
-│                   ├── Main.java                  # Application entry point
-│                   ├── AppConfig.java             # JAX-RS configuration
-│                   ├── exception/                 # Custom exceptions
+│                   ├── Main.java                            # Application entry point
+│                   ├── AppConfig.java                       # JAX-RS configuration
+│                   ├── exception/                           # Custom exceptions
 │                   │   ├── AuthorNotFoundException.java
 │                   │   ├── BookNotFoundException.java
 │                   │   ├── CartItemNotFoundException.java
@@ -36,21 +36,21 @@ BookstoreAPI/
 │                   │   ├── EmptyCartException.java
 │                   │   ├── GlobalExceptionMapper.java
 │                   │   └── OrderNotFoundException.java
-│                   ├── model/                     # Data models
+│                   ├── model/                                # Data models
 │                   │   ├── Author.java
 │                   │   ├── Book.java
 │                   │   ├── CartItem.java
 │                   │   └── Order.java
-│                   ├── repository/                # Data access
+│                   ├── repository/                           # Data access
 │                   │   ├── BookRepository.java
 │                   │   ├── CartRepository.java
 │                   │   └── OrderRepository.java
-│                   └── resource/                  # REST resources
+│                   └── resource/                             # REST resources
 │                       ├── AuthorResource.java
 │                       ├── BookResource.java
 │                       ├── CartResource.java
 │                       └── OrderResource.java
-└── pom.xml                                        # Maven configuration
+└── pom.xml                                                   # Maven configuration
 ```
 
 ## Getting Started
